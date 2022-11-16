@@ -5,11 +5,12 @@
 }
 
 :root {
-
+  margin: 0;
+  padding: 0;
   /* light-mode-colors */
   /* Background */
   --main-bg-light-color: #f2eef7;
-  --sub-bg-light-color: #020202;
+  --sub-bg-light-color: #e0e1f7;
   /* Text */
   --main-light-text-color: #ffffff;
   --sub-light-text-color: #6b6b6b;
@@ -64,7 +65,9 @@
   --grdnt: var(--gradient-light-color);
 
   color-scheme: light;
-
+  --img-light-filter: invert(1);
+  --img-dark-filter: invert(0);
+  --img-filter:var(--img-light-filter)
 }
 
 body.dark-theme {
@@ -80,6 +83,7 @@ body.dark-theme {
 
   --grdnt: var(--gradient-dark-color);
   color-scheme: dark;
+  --img-filter: var(--img-dark-filter)
 }
 
 .dark-control {
@@ -94,14 +98,21 @@ body.dark-theme {
     --_tspeed_fast: 50ms;
   }
 }
-
+img{
+  filter: var(--img-filter);
+}
 
 
 body {
   background-color: var(--bg);
   font-family: "Poppins", sans-serif;
 }
-
+.labelr {
+  cursor: pointer;
+  padding: 1rem .4rem;
+  background: var(--btn);
+  color: var(--txt);
+}
 .main {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -150,6 +161,7 @@ h2 {
 .logo-container img {
   width: 25rem;
   height: 18.7rem;
+
 }
 
 .mission-container {
