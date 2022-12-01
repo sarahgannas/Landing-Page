@@ -116,6 +116,7 @@ body {
     transform: translateX(0);
 }
 
+
 /* main grid layout */
 .main-container {
   display: grid;
