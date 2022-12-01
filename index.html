@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Grid-Template</title>
     <script defer src="animation.js"></script>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+
 </head>
   <body>
     <div class="main-container">
+      <div class="grid-header-container " id="home">
+        
       <div class="grid-navbar-container">
         <nav class="navbar">
             <div class="navbar-container">
@@ -26,7 +31,7 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <div class="btn-mode">
+                  <div class="btn-mode">
                   <input type="checkbox" id="toggle_checkbox" />
                   <label class="labelr" for="toggle_checkbox"></label>
                 </div>
@@ -39,7 +44,7 @@
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
         </button>
-      <div class="grid-header-container hidden" id="home">
+     
         <div class="header-container">
             <div class="header-right">
                 <img src="assets/white-22.png" alt="" />
@@ -60,37 +65,118 @@ maintenance and managment of IT and ISP companies.</p>
               <a href="#about">Discover More</a>
             </button>
           </div>
+         
         </div>
       </div>
       
     </div>
     </div>
+
       <div class="grid-body-container">
         <div class="body-container">
+          <div class="grid-features-container ">
+            <div class="features-header main-header" id="features">
+                <p> Our Features</p>
+            </div>
+            <div class="feature-container">
+                <div class="feature-box hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="round"
+    stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+    <polyline points="6 12 8 12 10 16 14 7 16 12 18 12"></polyline>
+  </svg>
+                    <div class="feature-header title">
+                   <p>Header</p>
+                    </div>
+                    <div class="feature-content">
+                    <p class="sub-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="feature-box hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff"
+                      stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              
+                      <rect x="2" y="3" width="20" height="18" rx="2"></rect>
+                      <polyline points="7 10 11 13 7 16"></polyline>
+                    </svg>
+                    <div class="feature-header title">
+                        <p>Header</p>
+                    </div>
+                    <div class="feature-content">
+                        <p class="sub-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          </p>                    
+                            </div>
+                  </div>
+                  <div class="feature-box hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff"
+                      stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              
+                      <path d="M15,20h5a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H4A2,2,0,0,0,2,6V7"></path>
+                      <path d="M2,15a5,5,0,0,1,5,5"></path>
+                      <path d="M2,11a9,9,0,0,1,9,9"></path>
+                      <line x1="1.99" y1="20" x2="2.01" y2="20" stroke-linecap="round" stroke-width="2"></line>
+                    </svg>
+                    <div class="feature-header title">
+                        <p>Header</p>
+                    </div>
+                    <div class="feature-content">
+                        <p class="sub-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          </p>
+                                                </div>
+                  </div>
+            </div>
+
+           </div>
             <div class="mission-container hidden" id="about">
-                <div class="dots">
-                    <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+              <div class="mission-header main-header"> 
+                <p>  Our Packages</p>
+            </div>
+              <article id="slider">
+                <input checked type='radio' name='slider' id='slide1' />
+                <input type='radio' name='slider' id='slide2' />
+                <input type='radio' name='slider' id='slide3' />
+                <input type='radio' name='slider' id='slide4' />
+                <input type='radio' name='slider' id='slide5' />
+                <div id="slides">
+                  <div id="container">
+                    <div class="inner">
+                      <article>
+                        <img src="http://placehold.it/942X400" />
+                      </article>
+                      <article>
+                        <img src="https://0.s3.envato.com/files/84450220/img/Dummy1-942X400.jpg" />
+                      </article>
+                      <article>
+                        <img src="https://0.s3.envato.com/files/84450220/img/Dummy2-942X400.jpg" />
+                      </article>
+                      <article>
+                        <img src="https://0.s3.envato.com/files/84450220/img/Dummy3-942X400.jpg" />
+                      </article>
+                      <article>
+                        <img src="https://0.s3.envato.com/files/84450220/img/Dummy4-942X400.jpg" />
+                      </article>
+                    </div>
                   </div>
-                <div class="mission-header main-header"> 
-                    <p>  Our Mission & Vision</p>
                 </div>
-                <div class="mission-content">
-                    <p class="text">
-                      We aim to provide quality technical services that facilitate and
-                      organize the workflow of companies in choosing the best solution in
-                      terms of processing and implementation.
-                    </p>
-                    <p class="text">
-                      The use of modern technology to ease and increase the efficacy of
-                      companies overall, as well as focusing on the provision of comfort
-                      in homes through technological means. In this way, our team strives
-                      to be the first and the best choice for our customers.
-                    </p>
-                  </div>
+                <div id="commands">
+                  <label for='slide1'></label>
+                  <label for='slide2'></label>
+                  <label for='slide3'></label>
+                  <label for='slide4'></label>
+                  <label for='slide5'></label>
+                </div>
+                <div id="active">
+                  <label for='slide1'></label>
+                  <label for='slide2'></label>
+                  <label for='slide3'></label>
+                  <label for='slide4'></label>
+                  <label for='slide5'></label>
+                </div>
+              </article>
             </div>
             <div class="grid-services-container" id="services">
                 <div class="services-header main-header">
@@ -124,104 +210,22 @@ maintenance and managment of IT and ISP companies.</p>
                       </p>
                     </div>
                   </div>
-                  <div class="services-container hidden">
+                  <div class="services-container hidden ">
                     <div class="services-pic">
                         <img src="assets/white-22.png" alt="" />
                       </div>
-                    <div class="services-content">
-                      <div class="sub-header">Networks</div>
+                    <div class="services-content ">
+                      <div class="sub-header">Web App Development</div>
                       <p class="text">
-                        Networks Installation, WI-FI Networks Systems, VPN "Virtual Private
-                        Network", Bandwidth Managment.
-                      </p>
-                    </div>
-                   
-                  </div>
-                  <div class="services-container hidden">
-                    <div class="services-pic-2">
-                        <img src="assets/white-22.png" alt="" />
-                      </div>
-                    <div class="services-content-2">
-                      <div class="sub-header">Smart Home</div>
-                      <p class="text">
-                        a smart home is probably best defined as a living area with connected
-                        technology meant to enhance the home. This could include smart
-                        thermostats, smart lights, smart plugs or outlets, smart doorbells,
-                        and locks, or voice assistants like Google Assistant and Alexa.
+                        Web development is the building and maintenance of websites; it’s the
+                        work that happens behind the scenes to make a website look great, work
+                        fast and perform well with a seamless user experience.
                       </p>
                     </div>
                   </div>
-                  <div class="services-container hidden">
-                    <div class="services-pic">
-                        <img src="assets/white-22.png" alt="" />
-                      </div>
-                    <div class="services-content">
-                      <div class="sub-header">Security Systems</div>
-                      <p class="text">
-                        Security Cameras, Alarm Systems, Fire Alarm System, Motion Detection
-                        System.
-                      </p>
-                    </div>
-                 
-                  </div>
+              
                </div>
-            <div class="grid-features-container ">
-                <div class="features-header main-header" id="features">
-                    <p> Our Features</p>
-                </div>
-                <div class="feature-container">
-                    <div class="feature-box hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" stroke-linecap="round"
-        stroke-linejoin="round">
-        <rect x="2" y="2" width="20" height="20" rx="2"></rect>
-        <polyline points="6 12 8 12 10 16 14 7 16 12 18 12"></polyline>
-      </svg>
-                        <div class="feature-header title">
-                       <p>Header</p>
-                        </div>
-                        <div class="feature-content">
-                        <p class="sub-text">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        </div>
-                      </div>
-                      <div class="feature-box hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff"
-                          stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                  
-                          <rect x="2" y="3" width="20" height="18" rx="2"></rect>
-                          <polyline points="7 10 11 13 7 16"></polyline>
-                        </svg>
-                        <div class="feature-header title">
-                            <p>Header</p>
-                        </div>
-                        <div class="feature-content">
-                            <p class="sub-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                              </p>                    
-                                </div>
-                      </div>
-                      <div class="feature-box hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff"
-                          stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                  
-                          <path d="M15,20h5a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H4A2,2,0,0,0,2,6V7"></path>
-                          <path d="M2,15a5,5,0,0,1,5,5"></path>
-                          <path d="M2,11a9,9,0,0,1,9,9"></path>
-                          <line x1="1.99" y1="20" x2="2.01" y2="20" stroke-linecap="round" stroke-width="2"></line>
-                        </svg>
-                        <div class="feature-header title">
-                            <p>Header</p>
-                        </div>
-                        <div class="feature-content">
-                            <p class="sub-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                              </p>
-                                                    </div>
-                      </div>
-                </div>
-
-               </div>
+          
             <div class="grid-contact-container hidden" id="contact">
                 <div class="contact-header main-header">
                     <p>Contact Us</p>
@@ -315,6 +319,8 @@ maintenance and managment of IT and ISP companies.</p>
           </div>
       </div>
     </div>
+
+  
     <script src="app.js"></script>
     <script>
         // Get the button
@@ -337,5 +343,8 @@ maintenance and managment of IT and ISP companies.</p>
           document.documentElement.scrollTop = 0;
         }
         </script>
+      <script src="jquery.min.js"></script>
+<script src="owl.carousel.js"></script>
+
   </body>
 </html>
