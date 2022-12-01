@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Grid-Template</title>
     <script defer src="animation.js"></script>
+  
 </head>
   <body>
     <div class="main-container">
+      <div class="grid-header-container " id="home">
+        
       <div class="grid-navbar-container">
-        <nav class="navbar hidden">
+        <nav class="navbar">
             <div class="navbar-container">
               <input type="checkbox" name="" id="" />
               <div class="hamburger-lines">
@@ -26,7 +29,7 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <div class="btn-mode">
+                  <div class="btn-mode">
                   <input type="checkbox" id="toggle_checkbox" />
                   <label class="labelr" for="toggle_checkbox"></label>
                 </div>
@@ -39,7 +42,7 @@
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
         </button>
-      <div class="grid-header-container hidden" id="home">
+     
         <div class="header-container">
             <div class="header-right">
                 <img src="assets/white-22.png" alt="" />
@@ -60,11 +63,13 @@ maintenance and managment of IT and ISP companies.</p>
               <a href="#about">Discover More</a>
             </button>
           </div>
+         
         </div>
       </div>
       
     </div>
     </div>
+
       <div class="grid-body-container">
         <div class="body-container">
             <div class="mission-container hidden" id="about">
@@ -315,6 +320,8 @@ maintenance and managment of IT and ISP companies.</p>
           </div>
       </div>
     </div>
+
+  
     <script src="app.js"></script>
     <script>
         // Get the button
@@ -337,5 +344,7 @@ maintenance and managment of IT and ISP companies.</p>
           document.documentElement.scrollTop = 0;
         }
         </script>
+      
+
   </body>
 </html>
